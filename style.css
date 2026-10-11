@@ -54,7 +54,7 @@ body {
     background: #f3f6fb;
 
     padding-top: 55px;
-    padding-bottom: 60px;
+    padding-bottom: 0;
 
     text-align: center;
 }
@@ -397,7 +397,7 @@ body {
 
     .hero {
         padding-top: 40px;
-        padding-bottom: 45px;
+        padding-bottom: 0x;
     }
 
     .image-track {
