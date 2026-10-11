@@ -1,1 +1,291 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Conheça Pega a Dica, um jogo para celular de palavras, dicas, fases e prêmios."
+    >
+
+    <meta name="theme-color" content="#071b46">
+
+    <title>Pega a Dica — ByMat</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/Favicon.png">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="header project-header">
+        <a href="index.html" aria-label="Voltar ao site ByMat">
+            <img
+                src="images/logo.png"
+                alt="ByMat"
+                class="logo"
+            >
+        </a>
+    </header>
+
+    <!-- APRESENTAÇÃO E CARROSSEL -->
+    <main>
+
+        <section class="game-hero">
+
+            <div class="game-hero-content">
+                <p class="eyebrow">PROJETO BYMAT</p>
+
+                <h1>Conheça o Pega a Dica</h1>
+
+                <p class="game-hero-subtitle">
+                    Dê dicas, descubra palavras, avance pelas fases
+                    e teste seus conhecimentos rumo ao prêmio máximo!
+                </p>
+            </div>
+
+            <div
+                class="game-image-strip"
+                aria-label="Capturas de tela do jogo Pega a Dica"
+            >
+                <div class="game-image-track">
+
+                    <!-- PRIMEIRA SEQUÊNCIA -->
+                    <img src="images/pega/print1.png" alt="Pega a Dica — tela 1">
+                    <img src="images/pega/print2.png" alt="Pega a Dica — tela 2">
+                    <img src="images/pega/print3.png" alt="Pega a Dica — tela 3">
+                    <img src="images/pega/print4.png" alt="Pega a Dica — tela 4">
+                    <img src="images/pega/print5.png" alt="Pega a Dica — tela 5">
+                    <img src="images/pega/print6.png" alt="Pega a Dica — tela 6">
+
+                    <!-- REPETIÇÃO PARA ANIMAÇÃO CONTÍNUA -->
+                    <img src="images/pega/print1.png" alt="" aria-hidden="true">
+                    <img src="images/pega/print2.png" alt="" aria-hidden="true">
+                    <img src="images/pega/print3.png" alt="" aria-hidden="true">
+                    <img src="images/pega/print4.png" alt="" aria-hidden="true">
+                    <img src="images/pega/print5.png" alt="" aria-hidden="true">
+                    <img src="images/pega/print6.png" alt="" aria-hidden="true">
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- LOGO E DESCRIÇÃO -->
+        <section class="game-about">
+
+            <img
+                src="images/logoPegaDica.png"
+                alt="Logo do jogo Pega a Dica"
+                class="game-logo"
+            >
+
+            <h2>Uma palavra. Uma dica. Um milhão de possibilidades.</h2>
+
+            <p>
+                Pega a Dica é um jogo para celular em que um jogador
+                recebe uma palavra e dá dicas para que o outro tente
+                acertá-la. Use o raciocínio, pense rápido e avance
+                pelas fases para conquistar o prêmio máximo de $1000000!
+            </p>
+
+        </section>
+
+        <!-- REGRAS -->
+        <section class="rules-section">
+
+            <div class="rules-container">
+
+                <div class="rules-heading">
+                    <p class="eyebrow">ENTENDA O JOGO</p>
+                    <h2>Como jogar?</h2>
+                    <p>
+                        Conheça as regras e prepare-se para chegar
+                        à pergunta do milhão.
+                    </p>
+                </div>
+
+                <!-- 1. TEMPO E DICAS -->
+                <article class="rule-card">
+
+                    <span class="rule-number">01</span>
+
+                    <h3>Tempo e dicas</h3>
+
+                    <p>
+                        O jogador tem um tempo limitado para dar dicas
+                        para que o outro jogador tente acertar a palavra
+                        exibida na tela. Normalmente, o tempo é de
+                        2 minutos, mas pode ser alterado nas configurações.
+                    </p>
+
+                    <h4>A dica</h4>
+
+                    <ul>
+                        <li>Deve conter apenas uma palavra.</li>
+
+                        <li>
+                            Não deve ser uma palavra derivada da resposta
+                            ou muito próxima dela.
+                            <span class="rule-example">
+                                Exemplo: resposta "bebida", dica "beber".
+                            </span>
+                        </li>
+
+                        <li>
+                            Pode ser uma palavra de comando, como
+                            "outro", "sinônimo", "contrário", "plural",
+                            "coletivo", "verbo", "adjetivo",
+                            "substantivo", "aumentativo" ou "diminutivo".
+                        </li>
+                    </ul>
+
+                    <h4>A resposta</h4>
+
+                    <ul>
+                        <li>Deve ser apenas um palpite por dica.</li>
+
+                        <li>
+                            Pode ser uma palavra de comando,
+                            como "pula", "dica" ou "mais".
+                        </li>
+                    </ul>
+
+                </article>
+
+                <!-- 2. ACERTOS, ERROS E PULOS -->
+                <article class="rule-card">
+
+                    <span class="rule-number">02</span>
+
+                    <h3>Acertos, erros e pulos</h3>
+
+                    <p>
+                        Ao acertar uma palavra, clique em
+                        <strong>"ACERTOU"</strong>. Ao errar,
+                        clique em <strong>"ERROU"</strong>.
+                    </p>
+
+                    <ul>
+                        <li>
+                            4 erros na mesma palavra fazem com que
+                            ela seja automaticamente perdida.
+                        </li>
+
+                        <li>
+                            Ao clicar em <strong>"PULAR"</strong>,
+                            você perde imediatamente a palavra atual
+                            e passa para a próxima.
+                        </li>
+
+                        <li>
+                            Ao acertar 4 palavras, você passa
+                            para a próxima fase.
+                        </li>
+                    </ul>
+
+                </article>
+
+                <!-- 3. FASES -->
+                <article class="rule-card">
+
+                    <span class="rule-number">03</span>
+
+                    <h3>As fases</h3>
+
+                    <p>
+                        Você começa com 10 chances. A cada fase,
+                        perde uma chance, até chegar à pergunta
+                        do milhão, na qual deverá acertar exatamente
+                        4 palavras com 4 chances.
+                    </p>
+
+                </article>
+
+                <!-- 4. PRÊMIOS -->
+                <article class="rule-card">
+
+                    <span class="rule-number">04</span>
+
+                    <h3>Os prêmios</h3>
+
+                    <h4>Se perder</h4>
+
+                    <p>
+                        Você recebe 20% do prêmio da fase disputada.
+                        A exceção é a primeira e a última fase:
+                        se perder em qualquer uma delas,
+                        não recebe prêmio.
+                    </p>
+
+                    <h4>Se ganhar</h4>
+
+                    <p>
+                        Você recebe exatamente o prêmio da fase
+                        conquistada. Ao final de cada fase, pode
+                        escolher parar e garantir o prêmio ou
+                        continuar para tentar ganhar mais,
+                        arriscando perder.
+                    </p>
+
+                    <div class="million-highlight">
+                        <span>PRÊMIO MÁXIMO</span>
+                        <strong>$1000000</strong>
+                        <p>
+                            Ao conquistar o prêmio máximo,
+                            você vence o jogo e leva o prêmio!
+                        </p>
+                    </div>
+
+                </article>
+
+                <!-- 5. RANKING -->
+                <article class="rule-card">
+
+                    <span class="rule-number">05</span>
+
+                    <h3>Ranking</h3>
+
+                    <p>
+                        Ao receber seu prêmio, você pode salvar seu
+                        nome no ranking, registrando sua conquista
+                        para competições e recordações.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- VOLTAR -->
+        <section class="back-section">
+            <a href="index.html" class="project-button">
+                Voltar ao site ByMat
+            </a>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+
+        <h2>ByMat</h2>
+
+        <p class="company-description">
+            Software, Tecnologia &amp; Inovação
+        </p>
+
+        <p class="copyright">
+            Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
