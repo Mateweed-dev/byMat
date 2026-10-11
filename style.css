@@ -481,7 +481,7 @@ body {
 
 .game-image-strip {
     position: relative;
-    width: 10%;
+    width: 100%;
     margin-top: 45px;
     overflow: hidden;
     line-height: 0;
