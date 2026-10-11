@@ -422,5 +422,337 @@ body {
     .footer {
         padding: 45px 20px;
     }
+}
 
+
+/* ========================================
+   PÁGINA DO PEGA A DICA
+======================================== */
+
+.project-header a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-header a:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 5px;
+}
+
+.game-hero {
+    padding-top: 65px;
+    padding-bottom: 60px;
+    overflow: hidden;
+    text-align: center;
+    background: #f3f6fb;
+}
+
+.game-hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+.eyebrow {
+    margin-bottom: 12px;
+    color: #526da5;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.game-hero h1 {
+    color: #071b46;
+    font-size: clamp(32px, 5vw, 54px);
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.game-hero-subtitle {
+    max-width: 700px;
+    margin: 18px auto 0;
+    color: #5b6577;
+    font-size: clamp(16px, 2vw, 20px);
+    line-height: 1.7;
+}
+
+/* CARROSSEL */
+
+.game-image-strip {
+    position: relative;
+    width: 100%;
+    margin-top: 45px;
+    overflow: hidden;
+}
+
+.game-image-strip::before,
+.game-image-strip::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+    pointer-events: none;
+}
+
+.game-image-strip::before {
+    left: 0;
+    background: linear-gradient(to right, #f3f6fb, transparent);
+}
+
+.game-image-strip::after {
+    right: 0;
+    background: linear-gradient(to left, #f3f6fb, transparent);
+}
+
+.game-image-track {
+    display: flex;
+    width: max-content;
+    gap: 22px;
+    animation: gameSlideImages 60s linear infinite;
+}
+
+.game-image-track img {
+    display: block;
+    width: 250px;
+    height: 445px;
+    flex-shrink: 0;
+    object-fit: contain;
+    border-radius: 18px;
+    background: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+@keyframes gameSlideImages {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-50% - 11px));
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .game-image-track {
+        animation: none;
+    }
+}
+
+/* APRESENTAÇÃO DO JOGO */
+
+.game-about {
+    padding: 75px 25px 85px;
+    text-align: center;
+    background: #ffffff;
+}
+
+.game-logo {
+    display: block;
+    width: 100%;
+    max-width: 340px;
+    max-height: 240px;
+    margin: 0 auto 30px;
+    object-fit: contain;
+}
+
+.game-about h2 {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #071b46;
+    font-size: clamp(24px, 3vw, 34px);
+    line-height: 1.3;
+}
+
+.game-about > p {
+    max-width: 760px;
+    margin: 22px auto 0;
+    color: #5b6577;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/* REGRAS */
+
+.rules-section {
+    padding: 75px 25px;
+    background: #f3f6fb;
+}
+
+.rules-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.rules-heading {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.rules-heading h2 {
+    color: #071b46;
+    font-size: clamp(32px, 4vw, 44px);
+}
+
+.rules-heading > p:last-child {
+    margin-top: 14px;
+    color: #5b6577;
+    line-height: 1.7;
+}
+
+.rule-card {
+    position: relative;
+    margin-bottom: 22px;
+    padding: 32px;
+    overflow: hidden;
+    border: 1px solid #e3e9f3;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 8px 25px rgba(7, 27, 70, 0.04);
+}
+
+.rule-number {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #647da9;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.rule-card h3 {
+    margin-bottom: 18px;
+    color: #071b46;
+    font-size: 25px;
+}
+
+.rule-card h4 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #183a70;
+    font-size: 17px;
+}
+
+.rule-card p,
+.rule-card li {
+    color: #4d596d;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.rule-card ul {
+    display: grid;
+    gap: 10px;
+    margin-top: 12px;
+    padding-left: 24px;
+}
+
+.rule-card li::marker {
+    color: #526da5;
+}
+
+.rule-example {
+    display: block;
+    margin-top: 5px;
+    color: #6a768a;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.million-highlight {
+    margin-top: 30px;
+    padding: 28px 20px;
+    border-radius: 12px;
+    background: #071b46;
+    text-align: center;
+}
+
+.million-highlight span {
+    display: block;
+    color: #bdccec;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.million-highlight strong {
+    display: block;
+    margin: 12px 0;
+    color: #ffffff;
+    font-size: clamp(36px, 7vw, 56px);
+    letter-spacing: 1px;
+}
+
+.million-highlight p {
+    color: #d8e1f2;
+}
+
+/* NAVEGAÇÃO */
+
+.back-section {
+    padding: 55px 20px;
+    background: #ffffff;
+    text-align: center;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 600px) {
+    .game-hero {
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+
+    .game-image-strip {
+        margin-top: 32px;
+    }
+
+    .game-image-track {
+        gap: 15px;
+        animation-duration: 45s;
+    }
+
+    .game-image-track img {
+        width: 180px;
+        height: 320px;
+        border-radius: 12px;
+    }
+
+    .game-image-strip::before,
+    .game-image-strip::after {
+        width: 35px;
+    }
+
+    .game-about {
+        padding: 55px 22px 60px;
+    }
+
+    .game-logo {
+        max-width: 260px;
+        max-height: 190px;
+    }
+
+    .game-about > p {
+        font-size: 16px;
+    }
+
+    .rules-section {
+        padding: 55px 18px;
+    }
+
+    .rule-card {
+        padding: 24px 20px;
+        border-radius: 12px;
+    }
+
+    .rule-card h3 {
+        font-size: 22px;
+    }
+
+    .rule-card p,
+    .rule-card li {
+        font-size: 15px;
+    }
 }
