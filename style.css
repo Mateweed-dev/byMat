@@ -189,6 +189,99 @@ body {
     transition: transform 0.3s ease;
 }
 
+/* ========================================
+   PROJETO: PEGA A DICA
+======================================== */
+
+.project-section {
+    width: 100%;
+    padding: 65px 25px;
+    background: #ffffff;
+}
+
+.project-card {
+    max-width: 900px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+    gap: 25px;
+}
+
+.project-logo {
+    display: block;
+
+    width: 100%;
+    max-width: 360px;
+    max-height: 220px;
+
+    object-fit: contain;
+}
+
+.project-description {
+    max-width: 650px;
+
+    font-size: 18px;
+    line-height: 1.7;
+
+    color: #5b6577;
+}
+
+.project-button {
+    display: inline-block;
+
+    padding: 14px 34px;
+
+    background: #071b46;
+    color: #ffffff;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+.project-button:hover {
+    background: #15366f;
+    transform: translateY(-2px);
+}
+
+.project-button:focus-visible {
+    outline: 3px solid #527bc7;
+    outline-offset: 4px;
+}
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    .project-section {
+        padding: 45px 22px;
+    }
+
+    .project-card {
+        gap: 20px;
+    }
+
+    .project-logo {
+        max-width: 280px;
+        max-height: 180px;
+    }
+
+    .project-description {
+        font-size: 16px;
+    }
+
+}
 
 /* ========================================
    CITAÇÃO
