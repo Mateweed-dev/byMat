@@ -442,7 +442,7 @@ body {
 
 .game-hero {
     padding-top: 65px;
-    padding-bottom: 60px;
+    padding-bottom: 0;
     overflow: hidden;
     text-align: center;
     background: #f3f6fb;
@@ -703,7 +703,7 @@ body {
 @media (max-width: 600px) {
     .game-hero {
         padding-top: 45px;
-        padding-bottom: 45px;
+        padding-bottom: 0;
     }
 
     .game-image-strip {
